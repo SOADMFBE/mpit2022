@@ -1,0 +1,17 @@
+@import '_nullstyle';
+@import '_catalog';
+@import '_section';
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('/font/verdana.ttf');
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    margin: 2rem;
+}
+

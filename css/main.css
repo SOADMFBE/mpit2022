@@ -1,0 +1,347 @@
+@charset "UTF-8";
+/*обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  margin: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+header {
+  padding: 2rem;
+}
+
+.return {
+  background-color: #ffaf24;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  margin-left: 2.3rem;
+}
+
+.filter {
+  background: linear-gradient(173.01deg, #52e3e7 2.55%, #1511b8 99.7%);
+  margin-top: 2rem;
+  height: 750px;
+}
+.filter select {
+  margin: 1rem 2rem;
+  margin-right: 3rem;
+  padding: 0.3em 0;
+  border-radius: 0.4em;
+  -ms-grid-column-align: right;
+      justify-self: right;
+  background-color: white;
+  font-weight: 400;
+  font-family: "Montserrat";
+}
+.filter .filt-title {
+  width: 100%;
+  background-color: #ffaf24;
+  padding: 1em 0;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+}
+.filter .checkbox-fr {
+  background-color: white;
+  width: 60%;
+  padding: 0.7rem;
+  border-radius: 0.4em;
+  margin: 0.8rem 2rem;
+}
+
+.cards {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  border-radius: 25px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+.cards .card {
+  -webkit-filter: drop-shadow(0px 4px 4px #ffaf24);
+          filter: drop-shadow(0px 4px 4px #ffaf24);
+  height: 240px;
+  background-color: #fff;
+  border-radius: 0.8em;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+.cards .card img {
+  height: 80%;
+  margin-top: 1em;
+}
+.cards .card .card-title {
+  text-align: center;
+}
+
+.ctl {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(150px, 25%) 1fr;
+  grid-template-columns: minmax(150px, 25%) 1fr;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 2rem;
+}
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .menu li {
+  font-weight: 600;
+  border-radius: 0.5em;
+  padding: 0.4em;
+  background-color: white;
+  margin: 1.5rem 2rem;
+  height: 2em;
+  width: auto;
+  -webkit-filter: drop-shadow(0px 4px 4px #0aaae9);
+          filter: drop-shadow(0px 4px 4px #0aaae9);
+}
+header .menu li a {
+  color: #000000;
+}
+header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+header .logo .logo-img {
+  margin-right: 1rem;
+}
+header .logo .namesvg {
+  margin-bottom: 0.5em;
+}
+header .logo .logo-txt {
+  padding-top: 0.5rem;
+  font-family: Verdana;
+  color: #848484;
+}
+
+#sec1 {
+  background: linear-gradient(135deg, #52e5e7 0%, #130cb7 100%);
+  border-radius: 1.5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 5.4rem;
+}
+#sec1 .sec1-text {
+  margin: 3rem 5rem;
+}
+#sec1 .sec1-text button {
+  background-color: #ffaf24;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  font-weight: 400;
+  margin-top: 3rem;
+  margin-left: 2.4rem;
+  font-size: 1.5rem;
+}
+#sec1 .sec1-text button:hover {
+  -webkit-filter: drop-shadow(0px 4px 4px #00000048);
+          filter: drop-shadow(0px 4px 4px #00000048);
+}
+#sec1 .sec1-text button a {
+  color: white;
+}
+#sec1 .title-sec1 {
+  font-family: "Montserrat";
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  color: #ffffff;
+}
+#sec1 .title-sec1 span {
+  color: #003a50;
+  -webkit-text-decoration: underline solid #003a50;
+          text-decoration: underline solid #003a50;
+  text-decoration-thickness: 0.1em;
+  font-size: 3rem;
+}
+#sec1 .text-sec1 {
+  margin-top: 2.4rem;
+  font-family: "Verdana";
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 0 2rem;
+}
+
+#sec2 {
+  margin: 15rem 0;
+  text-align: center;
+}
+#sec2 .sec3-title {
+  color: #1513b9;
+  font-weight: 600;
+  font-size: 2.5rem;
+}
+#sec2 .slider {
+  margin: 3rem 7rem;
+}
+#sec2 .owl-stage-outer {
+  padding: 1rem;
+}
+#sec2 .item {
+  -webkit-filter: drop-shadow(0px 4px 4px #ffaf24);
+          filter: drop-shadow(0px 4px 4px #ffaf24);
+  background-color: #fff;
+  width: 341px;
+  height: 235px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 0.5rem;
+}
+#sec2 .item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  height: auto;
+}
+#sec2 .item img {
+  width: 50%;
+}
+
+#sec3 {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  padding: 3rem 0;
+  margin: 0;
+}
+#sec3 .back {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10rem;
+  background-color: #1c3957;
+  padding: 2rem 7rem;
+  color: #ffffff;
+}
+footer .footer-link {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .flink {
+  margin-top: 0.9rem;
+}
+footer .footer-title {
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.under {
+  width: 100%;
+  position: absolute;
+  background-color: #1c3957;
+  color: #ffffff;
+  padding: 1rem 7rem;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("/font/verdana.ttf");
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  margin: 2rem;
+}
